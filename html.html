@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>linguagem HTML</title>
+    <!-- Propriedades Sintéticas -->
     <style>
         h1{color:blue;}
         img{  height: 300px; }
         a{  color: purple; }
         span{  font-size: 2em;  }
-        section { border-top-color: black;
+        section { 
+        border-top-color: black;
         border-top-style: solid;
         border-top-width: 2px;
     
@@ -27,16 +29,18 @@
         <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee"><strong>Tim Berners-Lee (1990)</strong></a>
     <br>para compartilhamento de documento do CERN
     </p>
-    <img src="https://www.cncf.io/wp-content/uploads/2020/05/Photo1.jpg" alt="Imagem o CERN">
+    <img draggable="true" src="https://www.cncf.io/wp-content/uploads/2020/05/Photo1.jpg" alt="Imagem o CERN">
     </div>
+
+    <hr>
 
     <section>
     <h2>Arquitetura Cliente servidor da WEB</h2>
     <p>As tecnologias que fundamentais que compoem a WEB são:</p>
     <ul>
         <li>Arquitetura Cliente Servidor</li>
-        <li> HTTP - Hyper Text Tranfer Protocol</li>
-        <li>HTML - Hyper Text Markup Language</li>
+        <li><mark>HTTP</mark> - Hyper Text Tranfer Protocol</li>
+        <li>HTML - <em>Hyper Text Markup Language</em> <del>é uma linguagm de programação</del> <sub>nota1</sub></li>
         <li>Navegador Cliente - </li>
         <li>Servidor Web</li>
     </ul>
@@ -44,6 +48,43 @@
     </section>
 
     <p>Ao longo dos anos a web evoluiu e novas tecnologia foram introduzidas como <span>CSS</span> e JavaScript</p>
+
+    <p> a=ax+bx+c <sup>2</sup></p>
+
+    <section id="listas">
+        <p>O HTML possui Listas não ordenadas, ordenadas e detalhadas. Criada com as tags ul ol dl</p>
+
+        <p>Lista não ordenada</p>
+        <ul>
+            <li>pera</li>
+            <li>uva</li>
+            <li>maçã</li>
+        </ul>
+
+         <p>Lista ordenada</p>
+        <ol>
+            <li>pera</li>
+            <li>uva</li>
+            <li>maçã</li>
+        </ol>
+
+         <p>Lista detalhada</p>
+        <ul>
+            <dt>Leite</dt>
+            <dd>bebida lactícia, nutritiva extraida de mamíferos</dd>
+
+            <dt>Café</dt>
+            <dd>bebida obtida com a torra e fervura do grão.</dd>
+        </ul>
+        <ol type="I"></ol>
+
+    </section>
+
+    <ul>
+        <li><Header> Header serve para o cabeçalho</Header></li>
+        <li>Nav serve para o site identicar a navegação entre guias</li>
+        <li></li>
+    </ul>
 
 </body>
 </html>
