@@ -7,35 +7,28 @@
     <style>
         .container{border: 1px solid black;
         display: grid;
-        grid-template-rows: 100px;
+        height: 100vh;
         /*grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 100px 100px 100px; */
-
-        grid-template-areas: 
-        "HEADER HEADER"
-        
-        
-        ;
-            
     }
         .box{border: 1px solid black;}
 
-        #box-1{
-        /*grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 3;*/
-        grid-area: HEADER;
-        }
-        #box-2{
-
-        }
+@media screen (max-width: 400px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen (max-width: 401px and max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr 1r;
+    }
+}
 
     </style>
 </head>
 <body>
-    div.container>div.box#box-${box$}*9
-<a href="https://css-tricks.com/complete-guide-css-grid-layout/">Grid guide</a>
+
 
     <div class="container">
         <div class="box" id="box-1">box1</div>

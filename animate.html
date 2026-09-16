@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        :root{ font-size: 10px; }
+
+        body{height: 100vh; }
+
+        p{font-size: 2rem;
+      animation: lançamento 3s infinite;  }
+
+    @keyframes lançamento {
+        0%{font-size: 5rem;
+        transform: translate(100vh)rotate(-45deg);}
+
+        50%{
+        font-size: 10rem;
+        transforma: translate(0)rotate(180deg);}
+
+        
+
+        100%{font-size: 30rem;
+        transform: translate(-100vh)rotate(-45deg);}
+           
+        }
+    </style>
+</head>
+<body>
+    <p>🚀</p>
+</body>
+</html>
