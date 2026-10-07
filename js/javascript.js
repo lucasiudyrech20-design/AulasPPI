@@ -10,7 +10,7 @@ const e=2.78;
 if (nome =="Lucas"){
     sobreNome="Rech";
     let idade=18;
-    var per="dog";
+    var pet="dog";
     console.log("nome: "+nome+" sobreNome: "+sobreNome+" idade: "+idade+" pet: "+pet);
 }
 let idade = 18;
@@ -49,3 +49,25 @@ if(imc<18.5){
 } else {
     console.log("Obesidade III")
 }
+
+// switch cas estrutura de seleção
+a=2;
+switch(a){
+    case a**1: console.log("A"); break;
+    case a==2: console.log("B"); break;
+    case 3==3: console.log("C"); break;
+    default: console.log("E");
+}
+
+// Estrutura de repetição while
+let i=0;
+while(i<5){
+    console.log(i);
+    i++;
+}
+
+let carnes=["picanha", "costela", "alcatra", "fraldinha"];
+
+carnes.forEach( (l1) =>{
+    console.log(l1)
+} )
