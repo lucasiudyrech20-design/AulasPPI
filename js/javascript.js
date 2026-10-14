@@ -11,30 +11,6 @@ const e=2.78;
 
 // String, Number, nul, undefined +typeof()
 
-var itensChurrasco=[];
-itensChurrasco.push("costela");
-itensChurrasco.push("palmito");
-itensChurrasco.push("pão de alho");
-
-itensChurrasco.forEach((i, t) =>{
-    console.log(i+"-"+t)
-});
-
-nome="Lucas Iudy";
-console.log(nome.split(" ").reverse().join());
-
-//Funções com arrray
-// reverse, join, map
-itensChurrasco.map((e)=>{
-    console.log(e.length)
-});
-
-//filter
-itensChurrasco.filter((e)=>{
-    (e=="costela");
-    console.log(e);
-})
-
 if (nome =="Lucas"){
     sobreNome="Rech";
     let idade=18;
