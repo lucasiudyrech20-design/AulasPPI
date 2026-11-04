@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de Variáveis e Operadores</h1>
+
+    <button id="btnExecutar">Executar</button>
+
+    <h2>Tipos de variáveis</h2>
+    <p id="pstring"></p>
+    <p id="pnumero"></p>
+    <p id="pboolean"></p>
+    <p id="pundefined"></p>
+    <p id="pnull"></p>
+    <p id="pobject"></p>
+    <p id="parray"></p>
+
+    <h2>Operações entre tipos diferentes</h2>
+    <p id="op1"></p>
+    <p id="op2"></p>
+    <p id="op3"></p>
+    <p id="op4"></p>
+
+    <script>
+        let btnExecutar=document.getElementById("btnExecutar");
+
+        btnExecutar.addEventListener("click", () => {
+            let texto = "Olá JavaScript";
+            let numero = 10;
+            let booleano = true;
+            let indefinido;
+            let nulo = null;
+            let objeto = { nome: "João", idade: 25 };
+            let array = [10, 20, 30];
+
+            document.getElementById("pstring").innerText ="String: " + typeof texto;
+            document.getElementById("pnumero").innerText ="Number: " + typeof numero;
+            document.getElementById("pboolean").innerText ="Boolean: " + typeof booleano;
+            document.getElementById("pundefined").innerText ="Undefined: " + typeof indefinido;
+            document.getElementById("pnull").innerText ="Null: " + typeof nulo;
+            document.getElementById("pobject").innerText ="Object: " + typeof objeto;
+            document.getElementById("parray").innerText ="Array: " + typeof array;
+
+            //Operações
+            let operacao1 = texto + numero;
+            let operacao2 = booleano * numero;
+            let operacao3 = texto - numero;
+            let operacao4 = numero + String(booleano);
+
+            document.getElementById("op1").innerText = "String + Number: " + operacao1;
+            document.getElementById("op2").innerText ="Boolean * Number: " + operacao2;
+            document.getElementById("op3").innerText ="String - Number: " + operacao3;
+            document.getElementById("op4").innerText ="Number + String(Boolean): " + operacao4;
+
+            console.log("String + Number:", operacao1);
+            console.log("Boolean * Number:", operacao2);
+            console.log("String - Number:", operacao3);
+            console.log("Number + String(Boolean):", operacao4);
+        });
+    </script>
+</body>
+</html>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sortear numero</title>
 
     <style>
-        .contaner{
+        .container{
             display: flex;
             height: 100vh;
             flex-direction: column;
@@ -34,17 +34,23 @@
             </div>
 
             <br>
-            <button>Sortear</button>
+            <button id="sortear">Sortear</button>
             <h2 class="result">-</h2>
     </div>
 
     <script>
-        btnSortear.addEventLitener("click", ()=>{
-            minimo= Number.parseFloat(min.value)// value para não pegar o bloco inteiro
-            maximo= Number.parseFloat(max.value)
-            random = (Math.random()*(maximo-minimo))+minimo;
-            result.innerHTML=random;
-        })
+        const btnSortear = document.getElementById("Sortear");
+        const min = document.getElementById("min");
+        const max = document.getElementById("max");
+        const result = document.querySelector(".result");
+
+        btnSortear.addEventListener("click", () => {
+            const minimo = Number.parseFloat(min.value);
+            const maximo = Number.parseFloat(max.value);
+            const random = Math.floor(Math.random()*(maximo - minimo + 1)) + minimo;
+            result.innerHTML = random;
+
+        });
 
     </script>
     
